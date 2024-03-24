@@ -103,6 +103,8 @@ Revisiting "older" technologies while armed with greater knowledge and a conside
 
 * A Retrotopia for the Web
 
-In [[https://www.goodreads.com/book/show/33377456-retrotopia][J.M. Greer's Retrotopia]], a fictional state achieves prosperity in what appears to be a scarcity-dominated, desolate world by revisiting, and making more efficient use, of /"older"/ technologies, trading off some comfort for reliability, efficiency, resilience, and control. Could something similar be done for the web? Probably, and most likely, without sacrificing nearly as much comfort.
+In [[https://www.goodreads.com/book/show/33377456-retrotopia][J.M. Greer's Retrotopia]], a fictional state achieves prosperity in what appears to be a scarcity-dominated, desolate world by revisiting, and making more efficient use, of /"older"/ technologies, trading off some comfort for reliability, efficiency, resilience, and control.
+
+Could something similar be done for the web? Probably, and most likely, without sacrificing nearly as much comfort.
 
 Barring regulatory action, this hinges on individuals abandoning larger platforms, if not fully, then at least in part, by refusing to adopt the "integrated services" offered by the platform provider. If the trajectory of platform decay continues, then users may be incentivized to do that anyway – a trend which should be encouraged.
