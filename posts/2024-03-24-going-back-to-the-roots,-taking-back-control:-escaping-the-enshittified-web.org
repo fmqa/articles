@@ -43,7 +43,7 @@ A "public access" gateway or proxy application may exist. Such applications (usu
 
 An often-praised, but these days increasingly maligned (mis)feature of /"social" news/ is the ability to interact with news items by commenting (often creating threaded conversations). If you're reading news to be informed, this is something you decidedly _do not_ want.
 
-But this does not preclude interactivity entirely. The level of interactivity is determined by the author of the news article: An author may choose to embed into the article a commenting mechanism, a service like disqus, or may simply opt to offer an E-Mail address where feedback can be sent.
+But this does not preclude interactivity entirely. The level of interactivity is determined by the author of the news article: An author may choose to embed into the article a commenting mechanism, a service like disqus, or may simply opt to offer an e-mail address where feedback can be sent.
 
 * Communication
 
@@ -59,7 +59,7 @@ The following tools do not suffer from these drawbacks:
 - [[https://en.wikipedia.org/wiki/Jitsi][Jitsi]] (ideally self-hosted)
 - [[https://en.wikipedia.org/wiki/Fediverse][Fediverse]] applications
 
-Note that if you use a private e-mail provider, governing authorities (or malicious actors with similar capabilities) likely [[https://www.dialogika.de/en/innovation/telekommunikation_auskunftsverfahren_bundesnetzagentur/][have the ability]] to eavesdrop on your correspondence. Therefore, it is imperative that you secure your E-Mail exchanges with GPG, this is especially important if you E-Mail is hosted domestically.
+Note that if you use a private e-mail provider, governing authorities (or malicious actors with similar capabilities) likely [[https://www.dialogika.de/en/innovation/telekommunikation_auskunftsverfahren_bundesnetzagentur/][have the ability]] to eavesdrop on your correspondence. Therefore, it is imperative that you secure your e-mail exchanges with GPG, this is especially important if your e-mail is hosted domestically.
 
 IRC and XMPP are older protocols that are still used to this day. An IRC or XMPP server can be self-hosted at a low cost. IRC, being a text-oriented protocol, is less prone to predatory advertising, and a number of [[https://libera.chat/][non-profit IRC]] networks still exist, boasting [[https://netsplit.de/networks/top100.en.php][tens of thousands of users]] – still a lot, although a far cry from the activity level during the peak period of IRC. On most networks, [[https://libera.chat/guides/registration][registering a nickname]] (which is not mandatory but offers some benefits) on an IRC network can be done without providing any personal information.
 
@@ -81,9 +81,9 @@ And that's /fine/.
 
 The latter option is by far, the worst, since it also usually implicitly gives the platform provider control (and certain rights) to your own content. If you want control, the best choice remains: Weblink away.
 
-If you're worried that weblinked content is "ephemeral" and may disappear, or get reseated somewhere else, then you may choose to rehost the content (check if the license allows this first), link to the content via the [[https://archive.org/][internet archive]], or pick a mirror or alternative resource. Broken links may be annoying, but are /not entirely useless/ - if you encounter a broken link in this article, I invite you to copy the URL and paste it into [[https://archive.org][archive.org]], where you will likely find a readable (archived) version of the target resource (Also, please inform me of this by sending an E-Mail to [[mailto:alcor@tilde.club][alcor@tilde.club]] mentioning the broken link, so I can update this article).
+If you're worried that weblinked content is "ephemeral" and may disappear, or get reseated somewhere else, then you may choose to rehost the content (check if the license allows this first), link to the content via the [[https://archive.org/][internet archive]], or pick a mirror or alternative resource. Broken links may be annoying, but are /not entirely useless/ - if you encounter a broken link in this article, I invite you to copy the URL and paste it into [[https://archive.org][archive.org]], where you will likely find a readable (archived) version of the target resource (Also, please inform me of this by sending an e-mail to [[mailto:alcor@tilde.club][alcor@tilde.club]] mentioning the broken link, so I can update this article).
 
-Note that the E-Mail address in the last paragraph is /also a hyperlink/ (following the [[https://en.wikipedia.org/wiki/Mailto][mailto: scheme]]). Clicking on it usually opens up a mail client in composition mode (on most operating systems), with the recipient prefilled with the e-mail-address.
+Note that the e-mail address in the last paragraph is /also a hyperlink/ (following the [[https://en.wikipedia.org/wiki/Mailto][mailto: scheme]]). Clicking on it usually opens up a mail client in composition mode (on most operating systems), with the recipient prefilled with the e-mail-address.
 
 Web linking should be encouraged in all web contexts. Be a hyperlink maximalist! Instead of doing a "self-post" or hosting your content/article on a siloed platform, consider whether you can post a link to your article/content (self-hosted, or hosted elsewhere) instead. Platforms that exhibit hostility to web linking should not be trusted.
 
