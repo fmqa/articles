@@ -15,7 +15,7 @@ But this is not an article about enshittification. This is an article about /ind
 
 * News
 
-[[https://en.wikipedia.org/wiki/Doomscrolling][Doomscrolling]] may be (possibly) [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6754543/][linked to a decline in mental and physical health]]. No really, it's better if you put down /the live feed/ (on whatever platform you're reading it on) and opt for a slower-moving alternative. The dynamics of social news feeds incentivize presenting the most rage-baiting, vitriolic, divisive content at the expense of … /everything else/ (including accuracy).
+[[https://en.wikipedia.org/wiki/Doomscrolling][Doomscrolling]] may be (possibly) [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6754543/][linked to a decline in mental and physical health]]. No really, it's better if you put down /the live feed/ (on whatever platform you're reading it on) and opt for a slower-moving alternative. The dynamics of social news feeds incentivize presenting the most [[https://www.journals.uchicago.edu/doi/abs/10.1017/S0022381612000540][rage-baiting]], vitriolic, divisive content at the expense of … /everything else/ (including accuracy).
 
 This is not an invitation to "quit news" wholesale, it is an invitation to quit /social/ news in favor of a small selection of quality, self-curated sources. To that end, the following tools can be used, in order of increasing complexity:
 
