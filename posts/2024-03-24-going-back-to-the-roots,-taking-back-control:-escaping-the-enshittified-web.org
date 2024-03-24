@@ -1,0 +1,108 @@
+#+title: Going Back To The Roots, Taking Back Control: Escaping the Enshittified Web
+#+date: <2024-03-23 Sa>
+#+filetags: enshittification capitalism web
+
+If you're reading this article coming from reddit, HN, slashdot, or some other [[https://en.wikipedia.org/wiki/Social_news_website][social news aggregator]], and have been browsing the web for ≥10 years, you might have experienced the following signs of degradation in your web browsing experience:
+
+- Content concentration, i.e. useful content being bifurcated into a handful of platforms or /silos/, to the extent where /platform-scoped searches/ (e.g. [[https://news.ycombinator.com/item?id=36293789][adding site:<platform-domain> to search queries]]) become necessary to find useful or relevant information.
+- Bloat and/or reduced usability: Sites (especially the larger "platforms") being slow to load, using high amounts of computing resources (e.g. /reddit.com/ using ~129MB of memory), making them annoying to use, or unusable on low-end devices. Oftentimes, a website may load unwanted and [[https://www.theverge.com/2023/4/28/23702527/reddit-chat-room-channels-discord][unnecessary functionality]], which may not be part of its core purpose.
+- "Soft" account-locking: Sites (especially some of the larger "platforms") [[https://mashable.com/article/twitter-force-visitors-login-view-tweets-profiles][intentionally degrading]] the user experience for unauthenticated users (e.g. by making part of the content unavailable), forcing casual readers to create a platform-tied account.
+- De-hyperlinking: Sites (especially the larger "platforms") replacing hyperlinks to external media with inferior in-house "previews" and/or showing "scary" popups telling warning the user that he/she is about to browser an "external website" (i.e. a different website, /the horror!/).
+
+The above phenomena can be considered symptoms of [[https://en.wikipedia.org/wiki/Enshittification][enshittification]] or "platform decay". Many [[https://pluralistic.net/tag/enshittification/][articles]] explore this trend more comprehensively, and explain how/why we got here, as well as possible (proposed) regulatory mechanisms to control it.
+
+But this is not an article about enshittification. This is an article about /individual/, autonomous actions and behavioral changes we can undertake in order to counteract it, at least on a personal level. Most of these actions involving giving up /certain "creature comforts" and habits/ in order to regain a /certain level of control, customizability, and functionality/. These trade-offs might not be worth it for some at this point – but eventually, as the phenomenon of platform decay accelerates, the advantages of these trade-offs will eventually outweigh the disadvantages.
+
+* News
+
+[[https://en.wikipedia.org/wiki/Doomscrolling][Doomscrolling]] may be (possibly) [[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6754543/][linked to a decline in mental and physical health]]. No really, it's better if you put down /the live feed/ (on whatever platform you're reading it on) and opt for a slower-moving alternative. The dynamics of social news feeds incentivize presenting the most rage-baiting, vitriolic, divisive content at the expense of … /everything else/ (including accuracy).
+
+This is not an invitation to "quit news" wholesale, it is an invitation to quit /social/ news in favor of a small selection of quality, self-curated sources. To that end, the following tools can be used, in order of increasing complexity:
+
+- Browser bookmarks
+- [[https://en.wikipedia.org/wiki/Comparison_of_feed_aggregators][RSS Readers]]
+- Newsreaders (e.g. [[https://en.wikipedia.org/wiki/Gnus][Gnus]])
+
+If you follow only a handful of magazines, blogs, or news sources and/or read news occasionally, a handful of browser bookmarks are entirely sufficient. Alternatively, the most portable solution remains RSS, which is still supported by popular blogware.
+
+[[https://en.wikipedia.org/wiki/RSS][RSS]] is a hypermedia format that embraces the decentralized nature of the web. RSS readers or clients (also known as /aggregators/) maintain a library of links to RSS documents, which are refreshed periodically to check for updates. Blogs, fediverse applications, CMSes, public/private broadcasters, and many other types of websites with updatable content support RSS.
+
+A smaller number of programs ([[https://en.wikipedia.org/wiki/Gnus][Gnus]]) support reading a large number of other "news sources" in addition to RSS. These programs offer a more uniform interface to reading news content from a wide variety of sources, including [[https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol][NNTP]] newsgroups, mailing lists (via e-mail), or even web searches.
+
+** "Domain Experts"
+
+A number of "domain experts" and/or public figures you may want to follow may be only available on walled-garden platforms that do not support RSS (or any form of public access). In these cases, you might be faced with the following options:
+
+- Asking the person to move to a publicly-accessible alternative (e.g. a (self-)hosted blog, or a federated alternative)
+- Using a public access gateway/proxy
+- Stop "following" said individuals
+
+A "public access" gateway or proxy application may exist. Such applications (usually in the form of a website) allow anonymous reading of platform profiles and/or content, circumventing the need for an account. However, it should be noted that platform providers perceive these applications as a threat, and deliberately introduce changes and/or incompatibilities to [[https://github.com/zedeus/nitter/issues/919][break their functionality]].
+
+** "Interacting" with the "News"
+
+An often-praised, but these days increasingly maligned (mis)feature of /"social" news/ is the ability to interact with news items by commenting (often creating threaded conversations). If you're reading news to be informed, this is something you decidedly _do not_ want.
+
+But this does not preclude interactivity entirely. The level of interactivity is determined by the author of the news article: An author may choose to embed into the article a commenting mechanism, a service like disqus, or may simply opt to offer an E-Mail address where feedback can be sent.
+
+* Communication
+
+In their attempt to construct monetizable content silos, many platforms embarked on a process of [[https://en.wikipedia.org/wiki/Horizontal_integration][horizontal integration]] where the platform becomes a communication provider (among other things) in addition to a content aggregator, integrating [[https://mashable.com/article/twitter-x-spaces-video][conferencing]] or [[https://www.theverge.com/2023/4/28/23702527/reddit-chat-room-channels-discord][chat services]] in addition to the usual submission or (micro-)blogging core feature set.
+
+Platform-provided communications should be avoided whenever possible. Not only do they facilitate surveillance and data mining, they create further dependence on the platform and force participants to sign up in order to participate in communication, thus encouraging further vendor lock-in.
+
+The following tools do not suffer from these drawbacks:
+
+- Plain e-mail (self-hosted, ideally also secured via [[https://en.wikipedia.org/wiki/GNU_Privacy_Guard][GPG]])
+- [[https://en.wikipedia.org/wiki/IRC][IRC]]
+- [[https://en.wikipedia.org/wiki/XMPP][XMPP]]
+- [[https://en.wikipedia.org/wiki/Jitsi][Jitsi]] (ideally self-hosted)
+- [[https://en.wikipedia.org/wiki/Fediverse][Fediverse]] applications
+
+Note that if you use a private e-mail provider, governing authorities (or malicious actors with similar capabilities) likely [[https://www.dialogika.de/en/innovation/telekommunikation_auskunftsverfahren_bundesnetzagentur/][have the ability]] to eavesdrop on your correspondence. Therefore, it is imperative that you secure your E-Mail exchanges with GPG, this is especially important if you E-Mail is hosted domestically.
+
+IRC and XMPP are older protocols that are still used to this day. An IRC or XMPP server can be self-hosted at a low cost. IRC, being a text-oriented protocol, is less prone to predatory advertising, and a number of [[https://libera.chat/][non-profit IRC]] networks still exist, boasting [[https://netsplit.de/networks/top100.en.php][tens of thousands of users]] – still a lot, although a far cry from the activity level during the peak period of IRC. On most networks, [[https://libera.chat/guides/registration][registering a nickname]] (which is not mandatory but offers some benefits) on an IRC network can be done without providing any personal information.
+
+Note that the text-oriented nature of IRC does not prevent IRC users from sharing rich media content: IRC users /embrace/ hypermedia and the decentralized web, and share media content by /embedding into their messages hyperlinks to the media resources they want to share/ (which may be even self hosted). [[https://thelounge.chat/img/thelounge-screenshot.png][Some IRC clients]] even have the ability to transparently fetch and preview such resources inline.
+
+If IRC users wish to initiate a conference, they may choose to post a hyperlink to a Jitsi meeting in their channel (which, again, may point to a self-hosted jitsi instance). Clicking a hyperlink may be less convenient than clicking on a voice chat room in the "sidebar", but it decouples the conferencing provider from the messaging provider and allows participants more control as to the choice of their conferencing/VoIP solution. Of course, IRC clients may choose to integrate jitsi support into their UI as with image previews, adding functionality to create ad-hoc meetings on a specific instance at the press of a button, or by opening a tab embedding the meeting within a client if a link to a conference is clicked. As most IRC clients are extensible via plugins, a user may even write such functionality themselves. A sufficiently featureful IRC client can make an IRC channel look as "modern" or "dated" as it wants it to be, depending on the level of hypermedia integration supported by the client.
+
+A common misconception about IRC is that a persistent connection to IRC (or a bouncer enabling the latter) is a necessity for things like offline messaging. While bouncers offer some benefits to a user, most IRC networks provide a [[https://docs.dal.net/docs/memoserv.html][MemoServ]] service to send offline message to a registered user, and some networks (e.g. Libera.Chat) offer mail forwarding for received memos as an additional convenience feature. For chat history, some channels perform public logging (often including a hyperlink to the [[https://libera.irclog.whitequark.org/][log archive]] in the channel topic), and any client may choose when/what/how to log as it sees fit.
+
+[[https://nfraprado.net/post/vcard-rss-as-an-alternative-to-social-media.html][Cross-linking your website to your IRC, XMPP, and E-Mail identities]] via a [[https://de.wikipedia.org/wiki/VCard][vCard]] should be sufficient for covering all your communication needs, and can be done without relying on a single commercialized or closed platform.
+
+* Hypermedia Maximalism
+
+While you're reading this article, you've probably noticed that it's replete with hyperlinks to other sites. These hyperlinks point to references in the form of wiki articles, other blog articles posted on external blogs, research papers, or web applications. Most of these hyperlinks point to publicly-accessible _external_ websites.
+
+And that's /fine/.
+
+[[https://en.wikipedia.org/wiki/Hypermedia][This is how the web is /supposed/ to operate]]. Platform providers nowadays attempt to control, curtail, or suppress web linking through various strategies, e.g. using modal scare-dialogs warning users of "risks" associated with "external websites", by displaying an inline preview of the content in their own "viewer", or by discouraging web linking altogether in favor of their own integrated content hosting.
+
+The latter option is by far, the worst, since it also usually implicitly gives the platform provider control (and certain rights) to your own content. If you want control, the best choice remains: Weblink away.
+
+If you're worried that weblinked content is "ephemeral" and may disappear, or get reseated somewhere else, then you may choose to rehost the content (check if the license allows this first), link to the content via the [[https://archive.org/][internet archive]], or pick a mirror or alternative resource. Broken links may be annoying, but are /not entirely useless/ - if you encounter a broken link in this article, I invite you to copy the URL and paste it into [[https://archive.org][archive.org]], where you will likely find a readable (archived) version of the target resource (Also, please inform me of this by sending an E-Mail to [[mailto:alcor@tilde.club][alcor@tilde.club]] mentioning the broken link, so I can update this article).
+
+Note that the E-Mail address in the last paragraph is /also a hyperlink/ (following the [[https://en.wikipedia.org/wiki/Mailto][mailto: scheme]]). Clicking on it usually opens up a mail client in composition mode (on most operating systems), with the recipient prefilled with the e-mail-address.
+
+Web linking should be encouraged in all web contexts. Be a hyperlink maximalist! Instead of doing a "self-post" or hosting your content/article on a siloed platform, consider whether you can post a link to your article/content (self-hosted, or hosted elsewhere) instead. Platforms that exhibit hostility to web linking should not be trusted.
+
+If you're a web developer, consider adopting architectures and methodologies that enable and maximize the usage of hypermedia. [[https://htmx.org/][htmx]] is a good example of this. A server-side hypermedia application can be more performant and less resource-intensive than an SPA, on top of being more extensible, and in many cases, simpler!
+
+* Back to Web 1.0?
+
+If you grew up in the late 90s/early 00s, all of this may seem very familiar. This is how most of internet in the "Web 1.0" era used to work, and these are all "old" technologies and protocols. Is this all worth revisiting?
+
+I'm inclined to think that the answer is /yes/. A number of developments have happened in the meantime that might make such an effort worthwhile:
+
+1. Web standards are more expansive, more mature, and much richer in functionality than 20 years ago. A website can be anything from a simple article like this one, to a full-blown 3D MMORPG, to an entire office suite, to a webconferencing program, all entirely served via the web and rendered by a web browser. It is now possible to hyperlink /anything/ (since /nearly/ anything can run on the web platform), /anywhere/ (provided the linked application has sufficient support for that).
+2. Computing resources have increased to an extravagant level – hyperlink maximalism, high decentralization, and elaborate modes of hypermedia integration are possible for the same reason it's possible to have 100 browser tabs open on a phone.
+3. The increased centralization of content on big "platform provider" turf, and the latter's subsequent decay in quality make it so that such a development would qualitatively /improve/ things.
+
+Revisiting "older" technologies while armed with greater knowledge and a considerably greater availability of resources is not a return to a Web 1.0, and should not be characterized as such. It should be viewed in terms of revisiting paths of development not taken, checking if the same limitations leading towards that outcome still apply, taking what works (hypermedia, decentralization, the web as a rich, portable application platform) and abandoning what doesn't (centralized, horizontally-integrated platforms) – that is, the goal should be a "Web 1.1" rather than a regression back to "Web 1.0".
+
+* A Retrotopia for the Web
+
+In [[https://www.goodreads.com/book/show/33377456-retrotopia][J.M. Greer's Retrotopia]], a fictional state achieves prosperity in what appears to be a scarcity-dominated, desolate world by revisiting, and making more efficient use, of /"older"/ technologies, trading off some comfort for reliability, efficiency, resilience, and control. Could something similar be done for the web? Probably, and most likely, without sacrificing nearly as much comfort.
+
+Barring regulatory action, this hinges on individuals abandoning larger platforms, if not fully, then at least in part, by refusing to adopt the "integrated services" offered by the platform provider. If the trajectory of platform decay continues, then users may be incentivized to do that anyway – a trend which should be encouraged.
