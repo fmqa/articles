@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate"
+      type="application/rss+xml"
+      href="https://tilde.club/~alcor/rss.xml"
+      title="RSS feed for https://tilde.club/~alcor/">
+<title>Tentaclar Aliens' Epic Extraterrestrial Jungle Dance Party</title>
+<meta name="author" content="Alcor">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="initial-scale=1,width=device-width,minimum-scale=1">
+<link href= "static/style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="static/favicon.ico"></head>
+<body>
+<div id="preamble" class="status"><div class="header">
+  <a href="https://tilde.club/~alcor/">👾 Tentaclar Aliens' Epic Extraterrestrial Jungle Dance Party 👾</a>
+</div></div>
+<div id="content">
+<h1 class="title">Posts tagged "editors":</h1>
+<div class="post-date">29 Mar 2024</div><h1 class="post-title"><a href="https://tilde.club/~alcor/2024-03-29-in-praise-of-modern-vanilla-emacs-29.html">In Praise of (modern) Vanilla Emacs (29+)</a></h1>
+<p>
+If we were to plot Emacs configurations on a geometric space based on their complexity, a simple (subjective) metric to use would be the <i>distance from vanilla Emacs</i>, i.e. the amount of key rebinding and/or function overrides being done to the default, vanilla Emacs configuration.
+</p>
+
+<p>
+In this (admittedly one-dimensional) space, sitting on one extreme (most modifications) would be Emacs <i>distributions</i> such as <a href="https://www.spacemacs.org/">spacemacs</a> or <a href="https://github.com/doomemacs/doomemacs">Doom Emacs</a>, which seek to remold Emacs into an entirely different modal editor, with Vim-like keybindings. Some packages, such as <a href="https://ergoemacs.github.io/">ergoemacs</a>, may rebind enough of the default key bindings to warrant their inclusion in this region.
+</p>
+
+<p>
+On other extreme (least modification), we have the vanilla, or "default" Emacs configuration, and adjacent "starter configurations" such as <a href="https://git.sr.ht/~ashton314/emacs-bedrock">bedrock</a>, which apply a set of modernized settings to Emacs' built-in packages.
+</p>
+
+<div id="outline-container-orgd7cdcbd" class="outline-2">
+<h2 id="orgd7cdcbd">Predictable Keybinds, Faster Startups</h2>
+<div class="outline-text-2" id="text-orgd7cdcbd">
+<p>
+Vanilla, default, or "minimalist" Emacs configurations enable a faster start-up, as less elisp code gets evaluated as part of Emacs' initialization process. This eliminates the need for running Emacs in server mode, and makes starting &amp; running several ad-hoc Emacsen viable, as each Emacs instance can be started in less than a second.
+</p>
+
+<p>
+Aside from startup performance, staying close to the defaults ensures that the configuration is usable by other Emacsers without any special guidance, using key bindings that are familiar to them. Many Elisp programs, snippets, or packages also assume a close-to-default environment. Overall, on a close-to-vanilla configuration, the potential for conflicts, incompatibilies, and general breakage remains low.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org856b2fc" class="outline-2">
+<h2 id="org856b2fc">Viability</h2>
+<div class="outline-text-2" id="text-org856b2fc">
+<p>
+Since version 29, Emacs can provide a powerful, modern editing experience with only a modest amount of custom configuration. <a href="https://git.sr.ht/~ashton314/emacs-bedrock">Bedrock</a> consists of ~119 non-comment lines. And <a href="https://github.com/fmqa/emacs.d/blob/main/init.el">my own configuration</a> is around ~173 lines long. Both only pull a minimum amount of external packages (Bedrock pulls <a href="https://github.com/justbur/emacs-which-key">which-key</a> for discoverability, and my configuration pulls <a href="https://jblevins.org/projects/markdown-mode/">markdown-mode</a> for documentation buffer formatting when using <a href="https://www.adventuresinwhy.com/post/eglot/">eglot</a>).
+</p>
+
+<p>
+In my opinion, a number of factors contributed to this:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.masteringemacs.org/article/introduction-to-ido-mode">(f)ido-mode</a>, icomplete and variations thereof such as <a href="http://xahlee.info/emacs/emacs/emacs_fido_mode.html">fido-vertical-mode</a> (Emacs 28+) are built-in into Emacs, and are viable replacements for <a href="https://github.com/minad/vertico">vertico</a> and other 3rd-party minibuffer completion packages.</li>
+<li><a href="http://xahlee.info/emacs/emacs/emacs_best_redo_mode.html">undo-no-redo</a> (Emacs 28+) provides a <i>traditional</i> undo functionality, although it is disabled by default.</li>
+<li>The built-in completion-at-point function, and the \*Completions\* buffer have both gotten various <a href="https://robbmann.io/posts/emacs-29-completions/">usability upgrades in Emacs 29</a>.</li>
+<li>tree-sitter <a href="https://www.masteringemacs.org/article/how-to-get-started-tree-sitter">is part of core Emacs</a> (29+), enabling simple structural editing.</li>
+<li><a href="https://www.adventuresinwhy.com/post/eglot/">eglot</a> is part of core Emacs, providing Emacs with language server support out of the box.</li>
+<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Projects.html">project.el</a> is built-in and automatically detects projects under VCS by default.</li>
+<li>The <a href="https://github.com/protesilaos/modus-themes">modus</a> and <a href="https://github.com/fniessen/emacs-leuven-theme">leuven</a> themes are bundled with Emacs, both offering usable dark themes.</li>
+</ul>
+
+<p>
+Other niceties such as <a href="https://www.gnu.org/software/emacs/manual/html_mono/use-package.html">use-package</a> (built-in as of Emacs 29+) may not directly affect the editing experience, but allow for succinct and less-verbose configuration.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcadc282" class="outline-2">
+<h2 id="orgcadc282">The Optimum</h2>
+<div class="outline-text-2" id="text-orgcadc282">
+<p>
+New Emacs uses often make the mistake of assuming that a modern editing experience requires a full-fledged distro like spacemacs or Doom. This may have been true to an extent is the past – indeed, installing a full distribution like spacemacs used to save a considerable amount of customization time, configuring and installing packages.
+</p>
+
+<p>
+However, I would argue that the last two major Emacs releases (28, 29) make simpler, more minimalist Emacs setups more viable than ever. In the very least, for most people, the number of external packages they need to install should be reduced, so that only a handful of external packages are necessary. In that sense, the optimum (for most people) should be somewhere around the <i>vanilla cluster</i> with less complex, mostly-straightforward customizations.
+</p>
+</div>
+</div>
+<div class="taglist"><a href="https://tilde.club/~alcor/tags.html">Tags</a>: <a href="https://tilde.club/~alcor/tag-emacs.html">emacs</a> <a href="https://tilde.club/~alcor/tag-editors.html">editors</a> </div><div id="archive">
+<a href="https://tilde.club/~alcor/archive.html">Other posts</a>
+</div>
+</div>
+<div id="postamble" class="status"><div id="archive">
+  <a href="https://tilde.club/~alcor/archive.html">Other posts</a>
+</div>
+<center><a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="https://purl.org/dc/terms/" href="https://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><a href="https://tilde.club/~alcor">tilde.club/–alcor</a></span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://tilde.club/~alcor" property="cc:attributionName" rel="cc:attributionURL">Alcor's Tentaclar Aliens' Epic Extraterrestrial Jungle Dance Party</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</center></div>
+</body>
+</html>

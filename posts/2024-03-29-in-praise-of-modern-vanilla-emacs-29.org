@@ -1,0 +1,38 @@
+#+title: In Praise of (modern) Vanilla Emacs (29+)
+#+date: <2024-03-29 23:27>
+#+description: In Praise Of (modern) Vanilla Emacs
+#+filetags: emacs editors
+
+If we were to plot Emacs configurations on a geometric space based on their complexity, a simple (subjective) metric to use would be the /distance from vanilla Emacs/, i.e. the amount of key rebinding and/or function overrides being done to the default, vanilla Emacs configuration.
+
+In this (admittedly one-dimensional) space, sitting on one extreme (most modifications) would be Emacs /distributions/ such as [[https://www.spacemacs.org/][spacemacs]] or [[https://github.com/doomemacs/doomemacs][Doom Emacs]], which seek to remold Emacs into an entirely different modal editor, with Vim-like keybindings. Some packages, such as [[https://ergoemacs.github.io/][ergoemacs]], may rebind enough of the default key bindings to warrant their inclusion in this region.
+
+On other extreme (least modification), we have the vanilla, or "default" Emacs configuration, and adjacent "starter configurations" such as [[https://git.sr.ht/~ashton314/emacs-bedrock][bedrock]], which apply a set of modernized settings to Emacs' built-in packages.
+
+* Predictable Keybinds, Faster Startups
+
+Vanilla, default, or "minimalist" Emacs configurations enable a faster start-up, as less elisp code gets evaluated as part of Emacs' initialization process. This eliminates the need for running Emacs in server mode, and makes starting & running several ad-hoc Emacsen viable, as each Emacs instance can be started in less than a second.
+
+Aside from startup performance, staying close to the defaults ensures that the configuration is usable by other Emacsers without any special guidance, using key bindings that are familiar to them. Many Elisp programs, snippets, or packages also assume a close-to-default environment. Overall, on a close-to-vanilla configuration, the potential for conflicts, incompatibilies, and general breakage remains low.
+
+* Viability
+
+Since version 29, Emacs can provide a powerful, modern editing experience with only a modest amount of custom configuration. [[https://git.sr.ht/~ashton314/emacs-bedrock][Bedrock]] consists of ~119 non-comment lines. And [[https://github.com/fmqa/emacs.d/blob/main/init.el][my own configuration]] is around ~173 lines long. Both only pull a minimum amount of external packages (Bedrock pulls [[https://github.com/justbur/emacs-which-key][which-key]] for discoverability, and my configuration pulls [[https://jblevins.org/projects/markdown-mode/][markdown-mode]] for documentation buffer formatting when using [[https://www.adventuresinwhy.com/post/eglot/][eglot]]).
+
+In my opinion, a number of factors contributed to this:
+
+- [[https://www.masteringemacs.org/article/introduction-to-ido-mode][(f)ido-mode]], icomplete and variations thereof such as [[http://xahlee.info/emacs/emacs/emacs_fido_mode.html][fido-vertical-mode]] (Emacs 28+) are built-in into Emacs, and are viable replacements for [[https://github.com/minad/vertico][vertico]] and other 3rd-party minibuffer completion packages.
+- [[http://xahlee.info/emacs/emacs/emacs_best_redo_mode.html][undo-no-redo]] (Emacs 28+) provides a /traditional/ undo functionality, although it is disabled by default.
+- The built-in completion-at-point function, and the \*Completions\* buffer have both gotten various [[https://robbmann.io/posts/emacs-29-completions/][usability upgrades in Emacs 29]].
+- tree-sitter [[https://www.masteringemacs.org/article/how-to-get-started-tree-sitter][is part of core Emacs]] (29+), enabling simple structural editing.
+- [[https://www.adventuresinwhy.com/post/eglot/][eglot]] is part of core Emacs, providing Emacs with language server support out of the box.
+- [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Projects.html][project.el]] is built-in and automatically detects projects under VCS by default.
+- The [[https://github.com/protesilaos/modus-themes][modus]] and [[https://github.com/fniessen/emacs-leuven-theme][leuven]] themes are bundled with Emacs, both offering usable dark themes.
+
+Other niceties such as [[https://www.gnu.org/software/emacs/manual/html_mono/use-package.html][use-package]] (built-in as of Emacs 29+) may not directly affect the editing experience, but allow for succinct and less-verbose configuration.
+
+* The Optimum
+
+New Emacs uses often make the mistake of assuming that a modern editing experience requires a full-fledged distro like spacemacs or Doom. This may have been true to an extent is the past – indeed, installing a full distribution like spacemacs used to save a considerable amount of customization time, configuring and installing packages.
+
+However, I would argue that the last two major Emacs releases (28, 29) make simpler, more minimalist Emacs setups more viable than ever. In the very least, for most people, the number of external packages they need to install should be reduced, so that only a handful of external packages are necessary. In that sense, the optimum (for most people) should be somewhere around the /vanilla cluster/ with less complex, mostly-straightforward customizations.
