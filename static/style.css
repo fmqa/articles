@@ -71,6 +71,12 @@ p {
     flex-grow: 1;
 }
 
+.post-date {
+    border-bottom: 3px solid purple;
+    margin-top: 1em;
+    margin-top: 1em;
+}
+
 h1.post-title:before {
     color: #ff55ff;
 }

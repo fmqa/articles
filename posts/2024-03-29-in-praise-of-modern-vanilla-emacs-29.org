@@ -33,6 +33,6 @@ Other niceties such as [[https://www.gnu.org/software/emacs/manual/html_mono/use
 
 * The Optimum
 
-New Emacs uses often make the mistake of assuming that a modern editing experience requires a full-fledged distro like spacemacs or Doom. This may have been true to an extent is the past – indeed, installing a full distribution like spacemacs used to save a considerable amount of customization time, configuring and installing packages.
+New Emacs users often make the mistake of assuming that a modern editing experience requires a full-fledged distro like spacemacs or Doom. This may have been true to an extent is the past – indeed, installing a full distribution like spacemacs used to save a considerable amount of customization time, configuring and installing packages.
 
 However, I would argue that the last two major Emacs releases (28, 29) make simpler, more minimalist Emacs setups more viable than ever. In the very least, for most people, the number of external packages they need to install should be reduced, so that only a handful of external packages are necessary. In that sense, the optimum (for most people) should be somewhere around the /vanilla cluster/ with less complex, mostly-straightforward customizations.
